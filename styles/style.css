@@ -1,0 +1,1785 @@
+/* --------------------------------------------------------
+Style Sheet for ReactJS
+CSS file for a COS10026 Project by React Lions
+Author: 
+Duy Khoa Pham (103515617)
+Gurmehar Singh (103510447)
+Anh Minh Nguyen (103178955)
+Bradley Bowering (102673815)
+Andrew Moutsos(103982376)
+Purpose: Style Sheet for ReactJS
+last modified: 29.05.2022
+----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+body {
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+/* header part */
+header {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .logo h1 a {
+    font-size: 45px;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-family: "Advent Pro", "cursive";
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Advent Pro', 'cursive';
+}
+
+#checkburger {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+header nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.25);
+}
+
+header >.logo > .icon{
+    animation: spin 13s linear 0.4s infinite;
+}
+/* for JS logo*/
+
+.blue {
+    color: #61DAFB;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.this {
+    color: #61DAFB;
+}
+
+
+/* react logo*/
+/* this logo is insprired from https://codepen.io/komando1004/pen/oNpoVvZ */
+/* default reactJS icon change width height and border for fixing size 
+ please keep it in a pattern such as 20 60 4 or 40 120 8
+ and change the size of ball as well its width and height = 1/2 * icon width */
+
+.icon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin-right: 5px;
+    justify-content:center;
+    display:inline-flex;
+    text-align: left;
+    align-items: center;
+}
+.icon .elip{
+  position:absolute;
+  width: 25px;
+  height: 65px;
+  border-radius:50%;
+  border:4px solid  #61DAFB;
+}
+.icon #eli1,#feli1, #aeli1, #beli1, #celi1{
+  transform: rotate(30deg);
+}
+.icon #eli2,#feli2, #beli2, #celi2{
+  transform:rotate(-30deg)
+}
+.icon #eli3,#feli3, #celi3{
+  transform:rotate(90deg)
+}
+.icon .ball{
+  position:absolute;
+  width:8px;
+  height:8px;
+  background-color:#61DAFB;
+  border-radius:50%;
+}
+
+@keyframes spin{
+    from{
+      transform:rotate(0deg)
+    }
+    to{
+      transform:rotate(360deg)
+    }
+  }
+
+
+/* footer part */
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: 'Advent Pro', 'cursive';   
+    font-style: italic;
+}
+footer > .footer-logo > .icon {
+    animation: spin 13s linear 0.4s infinite;
+}
+.footer-logo {
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Offside', 'sans-serif';
+    margin-top: 25px;
+}
+
+.footlist {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+.footlist li {
+    padding: 10px;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+footer .footer-logo div a {
+    font-size: 40px;
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+footer .footer-logo div .des {
+    font-size: 15px;
+    color: #F5F5F5;
+    text-align: left;
+    text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.25);
+}
+
+.flogo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    color: #61DAFB;
+    font-size: 50px;
+}
+#video{
+    text-decoration: none;
+    color: #61DAFB;
+    font-size: 25px;
+    animation: 2.0s slideFromLefttoRight;
+}
+footer a, #video a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header a:hover,
+footer a:hover,
+#video a:hover {
+    color: #61DAFB;
+}
+
+
+/*
+Design for the index page
+*/
+#index-main{
+    background-image: url(./images/newbackground.jpeg);
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    text-align: center;
+}
+#index-container h2{
+    text-align: center;
+    font-family: 'Advent Pro','cursive';
+    font-size: 80px;
+    color: #61DAFB;
+    padding-top: 20px;
+    animation: 2.0s slideFromLefttoRight;
+}
+#index-container p{
+    text-align: center;
+    font-size: 25px;
+    color: #61DAFB;
+    padding-top: 20px;
+    animation: 2.0s slideFromLefttoRight;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLefttoRight {
+    from {
+        margin-left: -4000px;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+
+/*
+Design for the topic page
+*/
+/* The following code for slider has been insprired by https://codepen.io/alvarotrigo/pen/bGqgqeK */
+/* slider */
+.slider-container {
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin: auto;
+    padding: .8%;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    height: 100%;
+}
+
+
+.slide_text {
+    height: 80%;
+    font-size: 24px;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: inline-block;
+    border: 1px solid #30475E;
+    background-color: #61DAFB;
+    border-radius: 20px;    
+    box-shadow: 4px 4px #30475E;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+}
+a.slide_prev{
+    transform: rotate(135deg);
+    left: 2%;
+}
+
+a.slide_next {
+    transform: rotate(-45deg);
+    right: 2.5%;
+}
+
+.slide_prev,
+.slide_next {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.slider_nav {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 300px;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.slider_navlink {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 10px 0 10px;
+}
+
+.emojicon {
+    font-size: 50px;
+    margin: auto;
+    width: 100px;
+    padding: 5px;
+    border: 4px solid red;
+    background-color: white;
+    border-radius: 50%;
+    /* box-shadow: 5px 5px #000; */
+}
+
+
+
+.bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: none;
+}
+
+@media screen and (max-width: 700px) {
+    .slider_container {
+        width: 100%;
+    }
+    .slider {
+        max-width: 250px;
+    }
+    .slide_text {
+        font-size: 20px;
+        padding-left: 22px ;
+        padding-right: 22px ;
+    }
+    .slide_text .content {
+        font-size: 15px;
+    }
+    .slider_nav {
+        left: 30%;
+    }
+    .slide_prev,
+    .slide_next {
+        width: 25px;
+        height: 25px;
+    }
+    
+}
+
+#topic-main section {    
+    border: solid 3px #12c3f4;
+    border-radius: 15px;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 96%;
+    box-shadow: 2.5px 2.5px #000;
+}
+.topic-h1{
+    text-align: center;
+    background-color: white;
+    color: #0F9FC7;
+    /* font-size: 50px; */
+    margin-top: 20px;
+    /* font-family: 'Advent Pro', 'sans-serif'; */
+    font: bold 50px 'Advent Pro', 'sans-serif';
+}
+.topic-h2{
+    text-align: center;
+    background-color: white;
+    color: #0F9FC7;
+    /* font-size: 50px; */
+    margin-top: 20px;
+    /* font-family: 'Advent Pro', 'sans-serif'; */
+    font: bold 50px 'Source Sans Pro', 'sans-serif';
+}
+#timetable-h1{
+    line-height: 60px;
+}
+#definition{
+    margin: 20px;
+}
+#defi{
+    font-size: 25px;
+    margin: 20px;
+}
+#defi dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 700px) {
+    #topic-main section {    
+        border: solid 3px #12c3f4;
+        border-radius: 15px;
+        margin: 0px auto;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        width: 96%;
+        box-shadow: 2.5px 2.5px #000;
+    }
+    #definition{
+        margin: 10px;
+    }
+    #defi{
+        font-size: 12px;
+    }
+    #defi dd {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}    
+#table{
+    overflow: hidden;
+    display: flex;
+}
+
+#vstable {
+    margin: 20px;
+    margin-top: 100px;
+    table-layout: fixed;
+    width: 60%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+#table caption strong{
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+#vstable td,
+#vstable th {
+    padding: 20px;
+    border: 1px solid black;
+    color: black;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgb(135, 206, 235);
+}
+
+#vstable th {
+    letter-spacing: 2px;
+    background-color: #f0f4ff;
+}
+
+#vstable td {
+    letter-spacing: 1px;
+    background-color: #cff3fd;
+    text-align: center;
+}
+#table aside{
+    /* align-self: center; */
+    padding: 10px;
+    width: 30%;
+    margin-top: 100px;
+    margin-right: 4px;
+    margin-left: 35px;
+    float: right;
+    border: solid #61DAFB;
+}
+#table aside ol {
+    margin: 20px;    
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+#table ol li {
+    margin-top: 20px;
+}
+#table-h1{
+    position: absolute;
+    text-align: center;
+    left: 42%;
+    background-color: transparent;
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    .topic-h1{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #table-h1{
+        position: inherit;
+        /* top: 15px; */
+        left: initial;
+    }
+    #table{
+        display: block;
+        font-size: 8px;
+    }
+    #vstable {
+        position: relative;
+        left: 7%;
+        margin-top: 10px;
+        width: 80%;
+    }
+    #table aside {
+        width: 100%;
+        float: none;
+        margin: 20px auto auto auto;
+        border: none;
+    }
+    #table aside ol{
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 12px;
+    }
+    #vstable caption strong{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    #vstable td,
+    #vstable th {
+        font-size: 9.5px;
+        text-align: left !important;
+    }
+}
+
+
+/* chart */
+#chart figure {
+    height: auto;
+    display: grid;
+    
+}
+
+#chart figure figcaption {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#chart figure #chart-img {
+    justify-self: center;
+    max-width: 80%;
+    height: auto;
+}
+
+#chart ul {
+    /* margin: 20px; */
+    justify-self: center;
+    margin: 40px;
+    margin-left: 70px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+@media only screen and (max-width: 700px) {
+    #chart figure #chart-img {
+        max-width: 92%;
+    }
+    #chart figure figcaption {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 15px;
+        margin-top: 7px;
+    }
+    #chart ul {
+        font-size: 12px;
+        margin-top: 0px;
+        line-height: 15px;
+    }
+    #chart ul li {
+        margin-top: 10px;
+    }
+}
+@keyframes forLogo {
+    0% {  
+        transform: translateY(0);
+    }
+    
+    20% {  
+        transform: translateY(-15px);
+
+    }
+
+    40% {  
+        transform: translateY(10px);
+    }
+    
+   60% {
+        transform: translateY(-7.5px);
+    }
+
+    80% {  
+        transform: translateY(0);
+    }
+}
+
+
+/* Timeline */
+/* The following code for timeline has been insprired by https://www.w3schools.com/howto/howto_css_timeline.asp */
+/* timeline part */
+#topic-main #timeline .timeline-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+/* (the vertical ruler) */
+
+#topic-main #timeline .timeline-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 4px;
+    background-color: #61DAFB;
+    bottom: 0;
+    left: 50%;
+}
+
+
+/* Container around content */
+
+#topic-main #timeline .timeline-wrapper .container {
+    position: relative;
+    padding: 10px 40px;
+    width: 50%;
+}
+
+
+/* diamond */
+
+#topic-main #timeline .timeline-wrapper .container::after {
+    content: '';
+    position: absolute;
+    top: 20.8px;
+    height: 20px;
+    width: 20px;
+    right: -16.3px;
+    transform: rotate(45deg);
+    border: 4px solid #61DAFB;
+    background-color: #61DAFB;
+    z-index: 1;
+}
+
+#topic-main #timeline .timeline-wrapper .right::after {
+    left: -12px;
+}
+/* content */
+.content{
+    font-size: 25px;
+}
+/* left content */
+
+#topic-main #timeline .timeline-wrapper .left {
+    box-sizing: border-box;
+    left: 0;
+}
+
+
+/* right content */
+
+#topic-main #timeline .timeline-wrapper .right {
+    box-sizing: border-box;
+    left: 50%;
+}
+
+
+/* Add triangle (pointing right) */
+
+#topic-main #timeline .timeline-wrapper .left::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    height: 0;
+    width: 0;
+    right: 28px;
+    border: solid transparent;
+    border-width: 12px 0 12px 12px;
+    border-color: transparent transparent transparent #61DAFB;
+    z-index: 1;
+}
+
+
+/* Add triangle (pointing left) */
+
+#topic-main #timeline .timeline-wrapper .right::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    height: 0;
+    width: 0;
+    left: 28px;
+    border: solid transparent;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #61DAFB transparent transparent;
+    z-index: 1;
+}
+
+
+/* The content in each period */
+#topic-main #timeline .timeline-wrapper .container .content {
+    padding: 20px 30px;
+    background-color: black;
+    border: 3px solid #61DAFB;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+}
+#topic-main #timeline .timeline-wrapper .container h2 {
+    font-family: "Advent Pro", "sans-serif";
+    /* font-size: 15px; */
+}
+@media only screen and (max-width: 700px) {
+    #topic-main #timeline .timeline-wrapper::after{
+        left: 31px;
+    }
+
+    #topic-main #timeline .timeline-wrapper .container{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    #topic-main #timeline .timeline-wrapper .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+  
+    #topic-main #timeline .timeline-wrapper .left::after,#topic-main #timeline .timeline-wrapper .right::after {
+        left: 15px;
+    }
+    /* Make all right containers behave like the left ones */
+    #topic-main #timeline .timeline-wrapper .right {
+        left: 0%;
+    }    
+    #topic-main #timeline .timeline-wrapper .container::after{
+        position: absolute;
+        top: 19px;
+        left: 19px;
+    }
+    #topic-main #timeline .timeline-wrapper .container h2 {
+        font-size: 15px;
+    }
+    #topic-main #timeline .timeline-wrapper .container p{
+        font-size: 10px;
+    }
+}
+/* Reference */
+
+#references{
+    border: 0 !important;
+    box-shadow: none !important;
+}
+#ref_list li {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+@media only screen and (max-width: 700px) {
+    #ref_list li {
+        margin-bottom: 20px;
+        font-size: 10px;
+        font-weight: 100;
+        line-height: 10px;
+    }
+}
+/* Reference */
+
+
+#ref_list li {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+@media only screen and (max-width: 700px) {
+    #ref_list li {
+        margin-bottom: 20px;
+        font-size: 10px;
+        font-weight: 100;
+        line-height: 10px;
+    }
+}
+/*
+Design for the quiz page
+*/
+
+.legend_css {
+    font-size: 35px;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.fieldset_css {
+    margin-bottom: 25px;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+}
+
+.quiz-bg {
+    width: 100%;
+    background-color: #30475E;
+    margin:0;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.cover {
+    max-height: 150px;
+    max-width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+.cover img {
+    margin-top: -40%;
+    height: 250px;
+    max-width: initial;
+}
+
+.quiz {
+    background-color: #fff;
+    width: 80%;
+    border: 1px solid #30475E;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 #000;
+    padding-bottom: 25px;
+    min-height: 100vh;
+}
+
+.heading-quiz {
+    font-size: 70px;
+    margin-top: 5px;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.labels {
+    display: grid;
+    font-size: 25px;
+    width: 75%;
+    text-align: left;
+    margin: auto;
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
+
+/*custom radio code*/
+.special-radio {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    display: flex;
+    place-content: start;
+    margin-left: 25%;
+    transform: translateY(1.55em);
+}
+.special-radio::before {
+    content: "";
+    width: 0.8em;
+    height: 0.8em;
+    text-align: center;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em rgb(0,177,255);
+}
+.special-radio:checked::before {
+    transform: scale(1);
+}
+.special-radio:focus {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+/*custom checkboxes*/
+.q4checks {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    place-content: start;
+    margin-left: 15%;
+    transform: translateY(2.25em);
+}
+
+.q4labels {
+    font-size: 25px;
+    margin-top: 0;
+    text-align: left;
+    display: flex;
+    place-content: start;
+    margin-left: 20%;
+    width: 60%;
+}
+
+
+.q1labels, .q2labels {
+    font-size: 25px;
+    margin-top: 0;
+    text-align: left;
+    display: flex;
+    /* place-content: left; */
+    margin-left: 30%;
+    width: 60%;
+}
+
+.q6labels {
+    display: inline-block;
+    width: 20%;
+    background-color: #ddd;
+    margin: 5px;
+    font-size: 25px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.q6labels:hover {
+    background-color: lightblue;
+}
+.q6bool {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.q6bool:checked + label {
+    background-color:#12c3f4;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+#own {
+    font-size: 25px;
+    border-radius: 10px;
+    border: #000 solid 1px;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.text-input {
+    justify-self: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 5px;
+    border-color: #30475E;
+    background-color: #61DAFB;
+    padding: .8%;
+    width: 60%;
+    color:#000;
+    box-shadow: 5px 5px #30475E;
+}
+
+.text-input-long {
+    font-size: 25px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 1.2%;
+    border-radius: 5px;
+    border-color: #30475E;
+    background-color: #61DAFB;
+    color:#000;
+    width: 60%;
+    box-shadow: 5px 5px #30475E;
+}
+
+.text-input:focus, .text-input-long:focus {
+    box-shadow: -5px -5px #000;
+}
+
+.submit-button {
+    font-size: 30px;
+    margin: 25px;
+    width: 250px;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 5px;
+    border-color: #30475E;
+    background-color: #000;
+    color:#61DAFB;
+}
+
+.submit-button:hover {
+    box-shadow: -5px -5px #61DAFB;
+}
+
+/*
+Design for the enhancements page
+*/
+
+.item p {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 30px;
+    margin-top: 40px;
+}
+
+#enhancement{
+    height: auto;
+}
+
+.item{
+    border: solid 3px #12c3f4;
+    border-radius: 15px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    width: 96%;
+    box-shadow: 2.5px 2.5px #000;
+}
+.item h2 {
+    color: #0F9FC7;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Advent Pro";
+    animation: 1.5s appear;
+}
+:target{
+    animation: forLogo 1.5s ease-in-out;
+}
+.item p {
+    animation: 1.5s appear;
+}
+#gap{
+    height: 35vh;
+    background-color: rgb(34,34,34);
+}
+
+#logo-enhance .icon{
+    animation: spin 13s linear 0.4s infinite;
+}
+#logo-enhance .icon .elip{
+    width:60px;
+    height:180px;
+    border:9px solid  #61DAFB;
+    animation: forLogo 1.5s ease-in-out;
+}
+#logo-enhance .icon .ball{
+  width:30px;
+  height:30px;
+  background-color:#61DAFB;
+}
+#logo-enhance #i1{
+   position: absolute;
+   top: 170px;
+   left: 5%;
+}
+#logo-enhance #i2{
+   position: absolute;
+   top: 170px;
+   left: 30%;
+}
+#logo-enhance #i3{
+   position: absolute;
+   top: 170px;
+   left: 55%;
+   
+}
+#logo-enhance #i4{
+   position: absolute;
+   top: 170px;
+   left: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #index-container h1{
+        font-size: 60px;
+    }
+    #logo-enhance .icon .elip{
+        width:40px;
+        height:120px;
+        border:6px solid #61DAFB;
+    }
+    #logo-enhance .icon .ball{
+      width:20px;
+      height:20px;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    .item h2 {
+        font-size: 40px;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        overflow: hidden;
+    }
+    .item{
+        margin-top: 10px;
+    }
+    #logo-enhance #i1{
+        left: 5%;
+     }
+     #logo-enhance #i2{
+        left: 25%;
+     }
+     #logo-enhance #i3{
+        left: 50%;
+        
+     }
+     #logo-enhance #i4{
+        left: 75%;
+     }
+}
+@media only screen and (max-width: 620px) {
+    .item h2 {
+        font-size: 30px;
+    }
+    #index-container p{
+        text-align: center;
+        font-size: 15px;
+        color: #61DAFB;
+        padding-top: 20px;
+        animation: 2.0s slideFromLefttoRight;
+    }
+    #logo-enhance .icon .ball{
+    width:10px;
+    height:10px;
+    }
+    #video{
+        font-size: 15px;
+    }
+    #video a{
+        font-size: 15px;
+    }
+    #more-info p {
+        font-size: 30px;
+    }
+    #index-container h2{
+        font-size: 40px;
+    }
+    #logo-enhance .icon .elip{
+        width:20px;
+        height:60px;
+        border:3px solid #61DAFB;
+    }
+}
+#second-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 250px;
+    align-items: center;
+    justify-items: center;
+}
+
+.circle {
+    display: grid;
+    align-items: center;
+}
+
+#second-container #circle1 p {
+    color: #61DAFB;
+}
+
+.circle p {
+    text-align: center;
+}
+
+#circle1 {
+    background-color: #000000;
+    height: 270px;
+    width: 270px;
+    border-radius: 90%;
+    top: 120px;
+}
+
+#circle2 {
+    background-color: #61DAFB;
+    height: 270px;
+    width: 270px;
+    border-radius: 90%;
+    top: 120px;
+}
+
+
+/*
+Cascading StyleSheet for Enhancements
+- Responsive Web Design
+*/
+
+/*Header resp*/
+@media screen and (max-width: 700px) {
+    
+    .menu {
+        display: none;
+        z-index: 100;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: blueviolet;
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 10px;
+    }
+
+    #checkburger:checked ~ .menu {
+        display: block;
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #000;
+        padding: 16px 0;
+        margin-top: 4%;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .hamburger {
+        display: block;
+        color: #fff;
+    }
+
+    header .logo h2 a {
+        font-size: 30px;
+    }
+
+    .icon .elip {
+        height: 15px;
+        width: 45px;
+        border: 3px solid #61DAFB;
+    }
+
+    .icon .ball {
+        height: 7.5px;
+        width: 7.5px;
+    }
+    
+    /*footer*/
+    footer .footer-logo div a {
+        font-size: 30px;
+    }
+    footer .footer-logo div .des {
+        font-size: 10px;
+    }
+    footer h2 {
+        font-size: 30px;
+    }
+    footer a {
+        font-size: 15px;
+    }
+    .footlist {
+        list-style: none;
+        flex-direction: column;
+    }
+    .footlist li {
+        padding: 2px;
+    }
+
+    /*font-size fixes for quiz*/
+    .quiz {
+        width: 95%;
+    }
+    .heading-quiz {
+        font-size: 35px;
+    }
+    legend {
+        font-size: 18px;
+    }
+    .labels, .submit-button {
+        font-size: 20px;
+    }
+    .text-input, .text-input-long {
+        font-size: 20px;
+        width: 60%;
+    }
+    .q1labels {
+        font-size: 15px;
+        margin-top: 6px;
+        padding-left: 5px;
+    }
+    .q2labels, .q4labels {
+        font-size: 15px;
+        margin-top: 6px;
+        padding-left: 5px;
+    }
+    .q2who {
+        height: 1em;
+        width: 1em;
+        transform: translateY(1.4em);
+        margin: 5px;
+        margin-left: 20%;
+    }
+    #own {
+        font-size: 17px;
+        width: 70%;
+    }
+    .q4checks {
+        height: 15px;
+        width: 15px;
+        font-size: 15px;
+        margin-top: 6px;
+        transform: translateY(1.5em);
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #checkburger:checked ~ .menu {
+        top: 9%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #checkburger:checked ~ .menu {
+        top: 11%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #vstable td,
+    #vstable th {
+        font-size: 6.5px;
+        font-weight: 400;
+    }
+}
+
+/*
+    Cascading StyleSheet for Assignment 2
+    Section for status.php
+    CHANGE IF NEEDED
+    Needs responsive design to work on other screen sizes
+*/
+
+#status {
+    min-height: 100vh;
+}
+
+#status p {
+    text-align: center;
+    padding: 15px;
+    font-size: 2em;
+}
+
+#statustable {
+    margin: 50px auto;
+    margin-top: 100px;
+    table-layout: fixed;
+    width: 75%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+#statustable td,
+#statustable th {
+    padding: 20px;
+    border: 1px solid black;
+    color: black;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgb(135, 206, 235);
+    height: 5vh;
+}
+
+#statustable th {
+    letter-spacing: 2px;
+    background-color: #f0f4ff;
+}
+
+#statustable td {
+    letter-spacing: 1px;
+    background-color: #cff3fd;
+    text-align: center;
+    height: 10vh;
+}
+
+#status h2 {
+    text-align: center;
+}
+
+/*login icon*/
+
+.circlebg {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    overflow: hidden;
+}
+
+/*login page style*/
+.user-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    right: 15px;
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.user-dropdown a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.user-dropdown a:hover {
+    background-color: #d2d2d2;
+    color: #000;
+}
+
+.usericon {
+    padding: 3px 0;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.circlebg:hover .user-dropdown {
+    display: block;
+}
+
+.login-main {
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
+.register-main {
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
+.login, .register {
+    background-color: #2A2B38;
+    color: #ffeba7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 75vw;
+    height: 60vh;
+    margin: 10vh auto;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login label, .register label {
+    font-size: 1.5em;
+    padding: 10px;
+    color: #ffeba7;
+    box-shadow: 5px 5px 5px #ffeba7;
+    transition: .5s;
+}
+
+.login fieldset legend, .register fieldset legend {
+    font-size: 4em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.login input[type="text"], .login input[type="password"],
+.register input[type="text"], .register input[type="password"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 1.5em;
+    background-color: #1f2029;
+    color: #ffeba7;
+}
+
+.login input[type="submit"], .register input[type="submit"] {
+    background-color: #ffeba7;
+    color: #1f2029;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover, .register input[type="submit"]:hover {
+    box-shadow: 0px 0px 5px 2.5px #ffeba7;
+}
+
+.choice {
+    padding: 8px;
+    font-size: 1.5em;
+}
+
+.loginORsignup {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.loginORsignup a {
+    padding: 12px 8px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #1f2029;
+    border: 1px solid #1f2029;
+    color: #0F9FC7;
+    text-decoration: none;
+}
+
+.loginORsignup a:hover {
+    background-color: #0F9FC7;
+    color: #000;
+}
+
+.loginORsignup a.act {
+    background-color: #0F9FC7;
+    color: #000;
+}
+
+.spacious {
+    padding: 10px;
+    height: 75vh;
+}
+
+#attempts {
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+#attempts ul li {
+    list-style: inside;
+}
+
+#attempts ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info {
+    font-family: 'Advent Pro';
+    padding: 10px;
+    font-size: 2em;
+    float: left;
+    clear: both;
+}
+.clearb {
+    clear: both;
+    margin: 5px;
+}
+.full {
+    background-color: #fff;
+    border: solid 3px #12c3f4;
+    border-radius: 15px;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 96%;
+    min-height: 100vh;
+    box-shadow: 2.5px 2.5px #000;
+}
+.undo h2 {
+    content:"";
+    display:block;
+    clear:both;
+}
+#manage_container #item1{
+    grid-area: item1;
+}
+#manage_container #item2{
+    grid-area: item2;
+}
+#manage_container #item3{
+    grid-area: item3;
+}
+#manage_container{
+    display: grid;
+    grid-template-areas: "item1 item2"
+                         "item3 item3";
+}
+
+.manage_table_container {
+    display: grid;
+    grid-template-areas: "a d"
+                         "b c"
+    ;
+}
+#manage_header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.manage_form{
+    display: grid;
+    margin: 5px;
+    padding: 5px;
+}
+.manage_form fieldset{
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 2px 2px black;
+}
+.manage_form legend{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.manage_form label{
+    margin-left: 20px;
+}
+
+/* The following code for designing the manage form has been insprired by https://www.w3schools.com/css/css_form.asp */
+.manage_table {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 96%;
+    box-shadow: 2px 2px rgb(61, 51, 51);
+}
+  
+.manage_table td, .manage_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.manage_table tr:nth-child(odd){background-color: #f2f2f2;}
+
+.manage_table tr:hover {background-color: #ddd;}
+  
+.manage_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1E90FF;
+    color: white;
+}
+
+.manage_all{
+    margin-left: 15px;
+    font-size: 25px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* The following code for designing the manage table has been insprired by https://www.w3schools.com/css/css_table.asp */
+.manageText, .manageSelect {
+    width: 98%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.manageSubmit {
+    width: 120px;
+    background-color: #1E90FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.error {
+    color: red;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.success{
+    color: green;
+    font-size: 30px;
+    margin-left: 20px;
+}
