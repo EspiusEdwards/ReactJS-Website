@@ -1,36 +1,38 @@
-COS10026 Computing Technology Inquiry Project
+# COS10026 Computing Technology Inquiry Project
+
 This repository contains the project report for the "COS10026 Computing Technology Inquiry Project" conducted at Swinburne University of Technology, School of Science, Computing, and Engineering Technologies, during Semester 1, 2022. This assignment focused on server-side programming.
 
-Project Banner
 
-Table of Contents
-Introduction
-Website
-Your contribution
-Reflection and discussion
-Conclusion
-Project Author
-Name: Duy Khoa Pham
-Student ID: 103515617
-Introduction
-The objective of this report is to demonstrate the understanding of the techniques applied while creating the project. It also reflects on and discusses personal contributions as a team leader. You can find a more detailed introduction here.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Website](#website)
+3. [Your contribution](#your-contribution)
+4. [Reflection and discussion](#reflection-and-discussion)
+5. [Conclusion](#conclusion)
 
-Website
-The project developed a full-stack web application scripted in PHP. It features user functionalities, technical details, and key features related to database integration, user registration, admin login, etc. More information about the website can be found here.
+## Project Author
+- Name: Duy Khoa Pham
+- Student ID: 103515617
 
-Website Interface
+## Introduction
+The objective of this project is to demonstrate the understanding of the techniques applied while creating the project. It also reflects on and discusses personal contributions as a team leader.
 
-Your Contribution
-The report elaborates on the role as a team leader, from team management and technical contributions to solving team's problems. Check out more on contribution here.
+## Website
+The project developed a full-stack web application scripted in PHP. It features user functionalities, technical details, and key features related to database integration, user registration, admin login, etc.
 
-Reflection and Discussion
-The report reflects on personal experiences regarding professional purpose and teamwork in this project, as well as suggesting some future recommendations. Read the detailed reflections here.
+![Website Interface](./website-interface.png)
 
-Conclusion
-This project was an invaluable hands-on experience, applying learnt theory on a real-life and multicultural project. Find the full conclusion here.
+## Your Contribution
+The report elaborates on the role as a team leader, from team management and technical contributions to solving team's problems.
 
-Project Report
-For a complete and comprehensive understanding, please refer to the full project report.
+## Reflection and Discussion
+The report reflects on personal experiences regarding professional purpose and teamwork in this project, as well as suggesting some future recommendations.
 
-License
+## Conclusion
+This project was an invaluable hands-on experience, applying learnt theory on a real-life and multicultural project.
+
+## Project Report
+For a complete and comprehensive understanding, please refer to the full [project report](./[Project_Report.md](https://github.com/EspiusEdwards/ReactJS-Website/blob/main/Duy%20Khoa%20Pham%20-%20INDIVIDUAL%20REPORT%202.docx)https://github.com/EspiusEdwards/ReactJS-Website/blob/main/Duy%20Khoa%20Pham%20-%20INDIVIDUAL%20REPORT%202.docx).
+
+## License
 This project is licensed under the terms of the MIT license.
