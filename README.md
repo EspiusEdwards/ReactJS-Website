@@ -18,9 +18,7 @@ This repository contains the project report for the "COS10026 Computing Technolo
 The objective of this project is to demonstrate the understanding of the techniques applied while creating the project. It also reflects on and discusses personal contributions as a team leader.
 
 ## Website
-The project developed a full-stack web application scripted in PHP. It features user functionalities, technical details, and key features related to database integration, user registration, admin login, etc.
-
-![Website Interface](./website-interface.png)
+The project developed a full-stack web application scripted in HTML, CSS, PHP and MySQL. It features user functionalities, technical details, and key features related to database integration, user registration, admin login, etc.
 
 ## Your Contribution
 The report elaborates on the role as a team leader, from team management and technical contributions to solving team's problems.
