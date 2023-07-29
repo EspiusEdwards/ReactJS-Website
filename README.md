@@ -32,7 +32,7 @@ The report reflects on personal experiences regarding professional purpose and t
 This project was an invaluable hands-on experience, applying learnt theory on a real-life and multicultural project.
 
 ## Project Report
-For a complete and comprehensive understanding, please refer to the full [project report](./[Project_Report.md](https://github.com/EspiusEdwards/ReactJS-Website/blob/main/Duy%20Khoa%20Pham%20-%20INDIVIDUAL%20REPORT%202.docx)https://github.com/EspiusEdwards/ReactJS-Website/blob/main/Duy%20Khoa%20Pham%20-%20INDIVIDUAL%20REPORT%202.docx).
+For a complete and comprehensive understanding, please refer to the full [project report](https://github.com/EspiusEdwards/ReactJS-Website/blob/main/Duy%20Khoa%20Pham%20-%20INDIVIDUAL%20REPORT%202.docx).
 
 ## License
 This project is licensed under the terms of the MIT license.
